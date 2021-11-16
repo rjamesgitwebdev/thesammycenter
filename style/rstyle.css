@@ -1,6 +1,9 @@
+<<<<<<< HEAD
+=======
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
+>>>>>>> main
 /* #8ae3da - bluegrey #f2a03d - orange */
 p {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
@@ -27,7 +30,11 @@ h3 {
   min-height: 100%;
 } */
 .blue {
+<<<<<<< HEAD
+    color: rgb(171, 208, 209);
+=======
     color: #4C9EAA;
+>>>>>>> main
     text-shadow: 0px 1px 1px #497a75;
 
 }
@@ -37,6 +44,12 @@ h3 {
 .pink {
   color:#ed254e;
 }
+<<<<<<< HEAD
+.test {
+    background-color: rgb(171, 208, 209);
+}
+.alt-blue, .alt-blue-hover:hover{color:#fff!important;background-color:rgb(171, 208, 209)}
+=======
 .yellow {
   color:#f9dc5c
 }
@@ -44,6 +57,7 @@ h3 {
   color:#4b1d3f;
 }
 .alt-blue, .alt-blue-hover:hover{color:#fff!important;background-color:#4C9EAA}
+>>>>>>> main
 .faded {
     color:rgb(63, 61, 61)
 }
@@ -53,7 +67,11 @@ h3 {
     backdrop-filter: blur( 3px );
     -webkit-backdrop-filter: blur( 3px );
     border-radius: 10px;
+<<<<<<< HEAD
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+=======
     border: 1px solid #4C9EAA;
+>>>>>>> main
     
 }
 .glass-darker {
