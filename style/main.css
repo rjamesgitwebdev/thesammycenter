@@ -73,7 +73,35 @@ html {
 }
 
 #myNavbar {
-  color: lightblue;
+  color: color: black;
+  background-color:  #f2a03d;
+}
+
+
+/* navbar hover animation  */
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 6px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.6s ease-out;
+}
+
+.hover-underline-animation:hover:after {\
+  transform: scaleX(5);
+  transform-origin: bottom left;
 }
 
 #home {
