@@ -99,7 +99,7 @@ html {
   transition: transform 0.6s ease-out;
 }
 
-.hover-underline-animation:hover:after {\
+.hover-underline-animation:hover:after {
   transform: scaleX(5);
   transform-origin: bottom left;
 }
