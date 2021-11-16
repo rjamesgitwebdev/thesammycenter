@@ -1,0 +1,22 @@
+:root{
+/* 
+/* CSS HEX */
+--middle-blue-green: #8ae3daff;
+--red-crayola: #ed254eff;
+--blue-sapphire: #3c6478ff;
+--naples-yellow: #f9dc5cff;
+--dark-purple: #4b1d3fff;
+
+/* CSS HSL */
+--middle-blue-green: hsla(174, 61%, 72%, 1);
+--red-crayola: hsla(348, 85%, 54%, 1);
+--blue-sapphire: hsla(200, 33%, 35%, 1);
+--naples-yellow: hsla(49, 93%, 67%, 1);
+--dark-purple: hsla(316, 44%, 20%, 1);
+ --primary:var(--middle-blue-green)
+ */
+
+
+}
+
+
