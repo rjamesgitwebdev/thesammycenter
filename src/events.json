@@ -1,0 +1,26 @@
+{
+    "events":[{
+      "title": "Gala",
+      "date": "11-1-2021",
+      "location": "Sandy, UT",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus ut faucibus pulvinar elementum. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in."
+    },
+    {
+      "title": "Charity",
+      "date": "12-1-2021",
+      "location": "Sandy, UT",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus ut faucibus pulvinar elementum. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in."
+    },
+    {
+      "title": "Christmas",
+      "date": "12-25-2021",
+      "location": "Sandy, UT",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus ut faucibus pulvinar elementum. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in."
+    },
+    {
+      "title": "Thanksgiving",
+      "date": "11-23-2021",
+      "location": "Sandy, UT",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus ut faucibus pulvinar elementum. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in."
+    }]
+}

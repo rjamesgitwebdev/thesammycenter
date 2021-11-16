@@ -1,14 +1,90 @@
-* {box-sizing:border-box}
+@import "w3.css";
+@import "rstyle.css";
 
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
+
+/*variables*/
+:root {
+--middle-blue-green: #4c9eaaff;
+--red-crayola: #FE5F55ff;
+--blue-sapphire: #3c6478ff;
+--naples-yellow: #f9dc5cff;
+--dark-purple: #4b1d3fff;
+
+  background-image:url("../assets/mick-haupt-pqYVbw4xrFU-unsplash.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-primary-blue{
+  background-color: var(--middle-blue-green);
+}
+
+.bg-purple{
+  background-color: var(--dark-purple);
+}
+.bg-red{
+  background-color: var(--red-crayola);
+}
+.bg-yellow{
+  background-color: var(--naples-yellow);
+}
+.bg-secondary-blue{
+  background-color: var(--blue-sapphire);
+}
+
+.text-primary-blue{
+  color: var(--middle-blue-green);
+}
+.text-yellow{
+  color:var(--naples-yellow);
+}
+.text-red{
+  color:var(--red-crayola);
+}
+.text-purple{
+  color:var(--dark-purple);
+}
+.text-secondary-blue{
+  color:var(--blue-sapphire);
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat ", sans-serif;
+}
+body,
+html {
   height: 100%;
-  color: #777;
+  scroll-behavior: smooth;
   line-height: 1.8;
 }
 
+#myNavbar {
+  color: lightblue;
+}
+
+#home {
+  background-color: white;
+}
+
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,14 +93,14 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('../assets/sharon-mccutcheon-O2u6gA2esAI-unsplash-min.jpg');
+  background-image: url("../assets/sharon-mccutcheon-O2u6gA2esAI-unsplash-min.jpg");
   min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
   background-image: url("../assets/nathan-dumlao-P5MXtYfgmmw-unsplash-min.jpg");
-  min-height: 400px;
+  min-height: 800px;
 }
 
 /* Third image (Contact) */
@@ -33,9 +109,19 @@ body, html {
   min-height: 400px;
 }
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+/* Fourth image (Contact) */
+.bgimg-4 {
+  background-image: url("../assets/image8.jpg");
+  min-height: 400px;
+}
 
+/* .w3-wide {
+  letter-spacing: 10px;
+}
+.w3-hover-opacity {
+  cursor: pointer;
+}
+ */
 /* Turn off parallax scrolling for tablets and phones 
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -47,7 +133,7 @@ body, html {
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
-  
+
   position: relative;
   margin: auto;
 }
@@ -58,7 +144,8 @@ body, html {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -80,8 +167,9 @@ body, html {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -116,7 +204,8 @@ body, html {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -129,11 +218,148 @@ body, html {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.border-purple{
+  border: 2px solid var(--dark-purple);
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+li {
+  border: 5px solid var(--dark-purple);
+  margin: 0;
+}
+
+.giveHandImg1 {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../assets/giveHand.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-radius: 1rem;
+  border: 2px solid var(--dark-purple);
+}
+
+.giveHandImg2 {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("../assets/talent.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  background-position: bottom;
+  border: 2px solid var(--dark-purple);
+}
+
+.giveHandImg3 {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url("../assets/treasure.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  border: 2px solid var(--dark-purple);
+}
+
+.frosted {
+  background-color: rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(7px) saturate(90%) contrast(30%) brightness(90%);
+-webkit-backdrop-filter: blur(7px) saturate(90%) contrast(30%) brightness(90%);
+border-radius: 10px; 
+}
+
+input::placeholder,
+textarea::placeholder{
+  color:white;
+  font-weight: bolder;
+}
+
+.border-blue {
+  border-color: var(--blue-sapphire);
+}
+
+
+.flex .col {
+	width: 100%;
+	height: auto;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-content: stretch;
+  
+  
+}
+
+.item-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:90vw;
+}
+.item-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:90vw;
+}
+
+.item-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  row-gap: 1rem;
+}
+
+.card-width{
+ width: 80%;
+}
+
+.middlepos{
+  position: relative;
+  top: 5px;
+  float: right;
+}
+
+
+
+
+
+.card-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tag-flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
