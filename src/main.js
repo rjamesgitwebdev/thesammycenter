@@ -1,6 +1,5 @@
 // Change style of navbar on scroll
 
-
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
   var x = document.getElementById("navDemo");
@@ -9,39 +8,6 @@ function toggleFunction() {
   } else {
     x.className = x.className.replace(" w3-show", "");
   }
-}
-
-// Image slider
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
 }
 
 // Get contact form
@@ -76,21 +42,28 @@ async function postData(formattedFormData) {
   thankYouMsg.classList.remove("w3-hide");
 }
 
-function accordion(id,btnId) {
+
+
+function accordion(id, btnId) {
   var x = document.getElementById(id);
   var btn = document.getElementById(btnId);
-  console.log(btn);
-  if (x.className.indexOf("w3-show") == -1) {
+  if (x.className.indexOf("w3-show active") == -1) {
     x.className += " w3-show";
+    x.className += " active";
   } else {
-    x.className = x.className.replace(" w3-show", "");
+    x.className = x.className.replace(" w3-show active", "");
+    
+
+
   }
 
-  if (btn.className.indexOf("w3-block") == -1){
+  if (btn.className.indexOf("w3-block") == -1) {
     btn.className += " w3-block";
   } else {
     btn.className = btn.className.replace(" w3-block", "");
   }
-
 }
+
+
+
 
