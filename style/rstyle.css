@@ -79,7 +79,7 @@ h3 {
     width: 30vw;
   }
   }
-}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -105,11 +105,14 @@ h3 {
       flex: 50%;
       max-width: 50%;
     }
+  }
+  @media  screen and (max-width:800px) {
     .bio-pic {
       max-width: -webkit-fill-available;
       height: auto;
     }
   }
+
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
