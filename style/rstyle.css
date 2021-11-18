@@ -32,15 +32,15 @@ h3 {
   color:#3c6478;
 }
 /* remove pink */
-.pink {
-  color:#ed254e;
-}
+/* .pink {
+  color:#ed254e; } */
+
 .yellow {
   color:#f9dc5c
 }
-.purple {
-  color:#4b1d3f;
-}
+/* .purple {
+  color:#4b1d3f; }*/
+
 .alt-blue, .alt-blue-hover:hover{color:#fff!important;background-color:#4C9EAA}
 .faded {
     color:rgb(63, 61, 61)
@@ -68,6 +68,18 @@ h3 {
     padding-top: 2em;
     padding-bottom: 2em;
 }
+.header-break {
+  display: none;
+}
+@media screen and (max-width:800px) {
+  .header-break {
+    display:block;
+  }
+  .sammy_header{
+    width: 30vw;
+  }
+  }
+}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -92,6 +104,10 @@ h3 {
     .column {
       flex: 50%;
       max-width: 50%;
+    }
+    .bio-pic {
+      max-width: -webkit-fill-available;
+      height: auto;
     }
   }
   
@@ -168,7 +184,7 @@ h3 {
   backdrop-filter: blur(10px) saturate(100%) contrast(30%) brightness(80%);
   -webkit-backdrop-filter: blur(20px) saturate(100%) contrast(30%) brightness(80%);
   border-radius: 10px;
-  border: 1px solid #4b1d3f;
+  border: 1px solid #4C9EAA;
 }
 .frosted-opaque {
     background-color: rgba(255, 255, 255, 0.2);
@@ -195,7 +211,7 @@ h3 {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-  background-color: #4b1d3f;
+  background-color: #4C9EAA;
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -204,4 +220,7 @@ h3 {
   display: none;
   overflow: hidden;;
   border-radius: 10px;
+}
+.bg-darkblue {
+  background-color: #3c6478;
 }
