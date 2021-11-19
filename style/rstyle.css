@@ -71,6 +71,20 @@ h3 {
 .header-break {
   display: none;
 }
+.second-break {
+  display: none;
+}
+@media screen and (max-width:300px) {
+  .second-break {
+    display: block;
+  }
+  .header-break{
+    display: none;
+  }
+  .small-screen{
+    text-align: center;
+  }
+}
 @media screen and (max-width:800px) {
   .header-break {
     display:block;
