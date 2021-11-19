@@ -30,7 +30,13 @@ $ahelp = $_POST["help"];
       for ($i = 0; $i < $n; $i++) {
         echo $ahelp[$i];
       }
+mail($email,'The Sammy Center Website Form','Name: '.$fName.' '.$lName.'<br> Email: '.$email.'<br>Message: '.$message.'<br>Topic: .$ahelp = $_POST["help"];
+$n = count($ahelp);
 
+
+for ($i = 0; $i < $n; $i++) {
+  echo $ahelp[$i],;
+}.')
 
 ?>
   
