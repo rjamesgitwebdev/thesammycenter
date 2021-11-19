@@ -96,12 +96,12 @@ html {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 6px;
+  height: 3px;
   bottom: 0;
   left: 0;
-  background-color: black;
+  background-color: white;
   transform-origin: bottom right;
-  transition: transform 0.6s ease-out;
+  transition: transform 0.4s ease-out;
 }
 
 .hover-underline-animation:hover:after {
