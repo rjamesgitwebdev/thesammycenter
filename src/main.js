@@ -1,4 +1,3 @@
-// Change style of navbar on scroll
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
@@ -44,26 +43,27 @@ async function postData(formattedFormData) {
 
 
 
-function accordion(id, btnId) {
+function accordion(id) {
   var x = document.getElementById(id);
-  var btn = document.getElementById(btnId);
-  if (x.className.indexOf("w3-show active") == -1) {
-    x.className += " w3-show";
-    x.className += " active";
+  if (x.className.indexOf("w3-show open") == -1) {
+    x.className += " w3-show open";
   } else {
-    x.className = x.className.replace(" w3-show active", "");
-    
-
-
-  }
-
-  if (btn.className.indexOf("w3-block") == -1) {
-    btn.className += " w3-block";
-  } else {
-    btn.className = btn.className.replace(" w3-block", "");
+    x.className = x.className.replace(" w3-show", "");
   }
 }
 
+//learn more dropdown
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-
-
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}

@@ -1,11 +1,11 @@
 @import "w3.css";
-@import "rstyle.css";
+/* @import "rstyle.css"; */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;900&display=swap");
 @font-face {
-  font-family: 'robgravesmedium';
-  src: url('robgraves-lkyv-webfont.woff2') format('woff2'),
-       url('robgraves-lkyv-webfont.woff') format('woff');
+  font-family: "robgravesmedium";
+  src: url("robgraves-lkyv-webfont.woff2") format("woff2"),
+    url("robgraves-lkyv-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -19,15 +19,19 @@
   --naples-yellow: #f9dc5cff;
   --dark-purple: #4b1d3fff;
 
-  /* background-image:url("../assets/mick-haupt-pqYVbw4xrFU-unsplash\ \(1\).webp");
+  background-image: url("../assets/sharon-mccutcheon-O2u6gA2esAI-unsplash-min.webp");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.crayon {
+  font-family: robgravesmedium, Montserrat;
 }
 
 .bg-primary-blue {
@@ -69,14 +73,106 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Montserrat ", sans-serif;
-}
+h6,
+p,
+a,
 body,
 html {
   height: 100%;
   scroll-behavior: smooth;
   line-height: 1.8;
+  font-family: "Montserrat ", sans-serif;
+}
+
+#sammyCenterStatement {
+  text-align: center;
+  word-wrap: break-word;
+  margin-top: 10px;
+  padding: 0px 2rem 0px 2rem;
+}
+
+#sammyCenterHeader::before {
+  content: "the";
+  position: relative;
+  font-family: "Montserrat";
+  color: white;
+  font-size: 2rem;
+}
+
+#sammyCenterHeader::after {
+  content: "center";
+  font-family: "Montserrat";
+  color: white;
+  font-size: 2rem;
+  position: relative;
+}
+
+@media screen and (max-width: 500px) {
+  #sammyCenterHeader::before {
+    content: "the";
+    font-family: "Montserrat";
+    color: white;
+    display: block;
+  }
+
+  #sammyCenterHeader::after {
+    content: "center";
+    font-family: "Montserrat";
+    color: white;
+    display: block;
+  }
+}
+
+.glass {
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid #4c9eaa;
+}
+.glass-darker {
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid #4c9eaa;
+}
+
+.blue {
+  color: #4c9eaa;
+  text-shadow: 0px 1px 1px #497a75;
+}
+
+.frosted {
+  background-color: rgba(230, 230, 230, 0.8);
+  backdrop-filter: blur(4px) saturate(100%);
+  -webkit-backdrop-filter: blur(20px) saturate(100%) contrast(30%)
+    brightness(80%);
+  border-radius: 10px;
+  border: 2px solid var(--middle-blue-green);
+}
+
+.collapsible {
+  background-color: var(--blue-sapphire);
+  cursor: pointer;
+  padding: 10px;
+  width: 80%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 #myNavbar {
@@ -99,7 +195,7 @@ html {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: white;
+  background-color: var(--naples-yellow);
   transform-origin: bottom right;
   transition: transform 0.4s ease-out;
 }
@@ -133,28 +229,21 @@ html {
 /* Second image (Portfolio) */
 .bgimg-2 {
   background-image: url("../assets/nathan-dumlao-P5MXtYfgmmw-unsplash-min.webp");
-  min-height: 800px;
+  min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
   background-image: url("../assets/daiga-ellaby-JZ51o_-UOY8-unsplash-min.webp");
-  min-height: 600px;
+  min-height: 300px;
 }
 
 /* Fourth image (Contact) */
 .bgimg-4 {
   background-image: url("../assets/image8.webp");
-  min-height: 600px;
+  min-height: 300px;
 }
 
-/* .w3-wide {
-  letter-spacing: 10px;
-}
-.w3-hover-opacity {
-  cursor: pointer;
-}
- */
 /* Turn off parallax scrolling for tablets and phones 
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -162,111 +251,6 @@ html {
     min-height: 400px;
   }
 }*/
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 .border-purple {
   border: 2px solid var(--dark-purple);
@@ -278,20 +262,20 @@ ul {
 }
 
 li {
-  border: 5px solid var(--middle-blue-green);
+  border: 2px solid var(--blue-sapphire);
   margin: 0;
 }
 
 .giveHandImg1 {
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
     ),
-    url("../assets/giveHand.webp");
+    url("../assets/hourglass.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-attachment: fixed;
   border-radius: 1rem;
   border: 2px solid var(--middle-blue-green);
 }
@@ -305,8 +289,8 @@ li {
     url("../assets/talent.webp");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   border-radius: 1rem;
-  background-position: bottom;
   border: 2px solid var(--middle-blue-green);
 }
 
@@ -319,8 +303,9 @@ li {
     url("../assets/treasure.webp");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   border-radius: 1rem;
-  border: 2px solid var(--dark-purple);
+  border: 2px solid var(--middle-blue-green);
 }
 
 .giveHandImg4 {
@@ -332,21 +317,14 @@ li {
     url("../assets/classroom.webp");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   border-radius: 1rem;
   border: 2px solid var(--middle-blue-green);
 }
 
-.frosted {
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(7px) saturate(90%) contrast(30%) brightness(90%);
-  -webkit-backdrop-filter: blur(7px) saturate(90%) contrast(30%) brightness(90%);
-  border-radius: 10px;
-}
-
 input::placeholder,
 textarea::placeholder {
-  color: white;
-  font-weight: bolder;
+  color: black;
 }
 
 .border-blue {
@@ -373,7 +351,7 @@ textarea::placeholder {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90vw;
+  width: 100%;
 }
 .item-2 {
   display: flex;
@@ -402,14 +380,16 @@ textarea::placeholder {
   align-content: flex-start;
 }
 .item-4 > div {
-  flex-basis: 20rem;
-}
-
-.card-width {
-  width: 80%;
+  flex-basis: 185px;
 }
 
 .middlepos {
+  position: relative;
+  top: 5px;
+  left: 15px;
+}
+
+.middlepos-small {
   position: relative;
   top: 5px;
   float: right;
@@ -428,4 +408,83 @@ textarea::placeholder {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+}
+
+div.w3-third {
+  display: flex;
+  justify-content: center;
+}
+
+div.w3-twothird {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  flex-basis: 400px;
+}
+
+div.w3-third img {
+  max-width: 100%;
+  max-height: 600px;
+  object-fit: scale-down;
+}
+
+div.w3-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quoteFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quoteFlex .glass-darker {
+  width: 90%;
+}
+
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.bio-img {
+  max-width: 300px;
+  max-height: 200px;
+  object-fit: scale-down;
+}
+
+.bio-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-content: center;
+}
+
+.bio-flex-item {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: auto;
+  justify-content: stretch;
+  align-items: center;
+}
+
+p.w3-xlarge {
+  line-height: 1;
+  letter-spacing: 0.2ch;
+}
+
+.aboutimg {
+  max-width: 300px;
+  height: auto;
+  object-fit: scale-down;
 }

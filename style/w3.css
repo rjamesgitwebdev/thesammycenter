@@ -1,4 +1,4 @@
-﻿/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html {
   box-sizing: border-box;
 }
@@ -421,6 +421,8 @@ a {
   position: relative;
   top: 6px;
 }
+
+
 .w3-sidebar {
   height: 100%;
   width: 200px;
@@ -892,7 +894,7 @@ a {
 .w3-row-padding > .w3-threequarter,
 .w3-row-padding > .w3-quarter,
 .w3-row-padding > .w3-col {
-  padding: 0 8px;
+  /* padding: 0 8px; */
 }
 .w3-container,
 .w3-panel {

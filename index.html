@@ -8,17 +8,20 @@
   <meta name="keywords"
     content="early childhood, preschool, adverse childhood experiences, ACES, trauma, high quality, parenting classes, coaching, mental health" />
   <meta name="description" content="a non-profit preschool fostering childrens' social emotional wellbeing" />
+  <!-- stlyesheets -->  
+  <link rel="stylesheet" href="style/w3.css" />
   <link rel="stylesheet" href="style/main.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap" />
+  <link rel="stlyesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stlyesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;900&display=swap" />
+  <!-- scripts -->
   <script src="src/main.js" defer></script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
     <div class="w3-bar" id="myNavbar">
-         <a class="
+      <a class="
             w3-bar-item
             w3-button
             w3-hover-blue-gray
@@ -26,251 +29,290 @@
             w3-hide-large
             w3-left
             w3-large
-                   
           " href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-         <i class="fa fa-bars "></i>
-        </a>
-        <a href="#home" class="w3-bar-item w3-button  w3-hover-blue-gray hover-underline-animation "><i class="fa fa-home w3-large"></i> HOME</a>
-        <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray hover-underline-animation"
-          ><i class="fa fa-align-center"></i> ABOUT US</a
-        >
-        <a href="#ourteam" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray hover-underline-animation"
-          ><i class="fa fa-group"></i> OUR TEAM</a
-        >
-        <a href="#getinvolved" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray hover-underline-animation"
-        ><i class="fa fa-handshake-o"></i> GET INVOLVED</a
-      >
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="
+            w3-bar-item w3-button w3-hover-blue-gray
+            hover-underline-animation
+            w3-hide-large w3-hide-medium w3-right
+          "><i class="fa fa-home w3-large"></i> HOME</a>
+      <a href="#home" class="
+            w3-bar-item w3-button w3-hover-blue-gray
+            hover-underline-animation
+            w3-hide-small
+          "><i class="fa fa-home w3-large"></i> HOME</a>
+      <a href="#about" class="
+            w3-bar-item w3-button w3-hide-small w3-hover-blue-gray
+            hover-underline-animation
+          "><i class="fa fa-align-center"></i> ABOUT US</a>
+      <a href="#ourteam" class="
+            w3-bar-item w3-button w3-hide-small w3-hover-blue-gray
+            hover-underline-animation
+          "><i class="fa fa-group"></i> OUR TEAM</a>
+      <a href="#getinvolved" class="
+            w3-bar-item w3-button w3-hide-small w3-hover-blue-gray
+            hover-underline-animation
+          "><i class="fa fa-handshake-o"></i> GET INVOLVED</a>
 
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray hover-underline-animation"
-          ><i class="fa fa-envelope"></i> GET CONNECTED</a
-        >
-       
-        
-          
-        </a>
+      <a href="#contact" class="
+            w3-bar-item w3-button w3-hide-small w3-hover-blue-gray
+            hover-underline-animation
+          "><i class="fa fa-envelope"></i> GET CONNECTED</a>
     </div>
 
-  
-      <!-- Navbar on small screens -->
-      <div
-        id="navDemo"
-        class="w3-bar-block  w3-blue-gray w3-hide w3-hide-large w3-hide-medium"
-      >
-        <a
-          href="#about"
-          class="w3-bar-item w3-button"
-          onclick="toggleFunction()"
-          >ABOUT US</a
-        >
-        <a
-          href="#ourteam"
-          class="w3-bar-item w3-button"
-          onclick="toggleFunction()"
-          >OUR TEAM</a
-        >
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block frosted w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT US</a>
+      <a href="#ourteam" class="w3-bar-item w3-button" onclick="toggleFunction()">OUR TEAM</a>
 
-        <a
-        href="#getinvolved"
-        class="w3-bar-item w3-button"
-        onclick="toggleFunction()"
-        >GET INVOLVED</a
-      >
-        <a
-          href="#contact"
-          class="w3-bar-item w3-button"
-          onclick="toggleFunction()"
-          >GET CONNECTED</a
-        >
-        
-      </div>
+      <a href="#getinvolved" class="w3-bar-item w3-button" onclick="toggleFunction()">GET INVOLVED</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">GET CONNECTED</a>
     </div>
-  
+  </div>
 
-
-        <!-- First Parallax Image with Logo Text -->
-        <div class="bgimg-1 w3-display-container" id="home">
-          <div class="w3-display-middle glass" style="white-space: nowrap">
-            <span class="w3-center w3-padding-large  w3-xlarge w3-wide  blue w3-animate-opacity small-screen"
-              style="font-family: 'robgravesmedium';">THE <span> <img
-                  src="assets/thesammycenter_header-removebg-preview.webp" class="sammy_header"></span><br
-                class="second-break"> CENTER</span>
-            <div class="w3-center yellow" style="font-family: 'robgravesmedium'; font-size: 1.3rem;"><em>a preschool
-                fostering<br class="second-break"> childrens'<br class="header-break"> social <br
-                  class="second-break">emotional wellbeing</em></div>
-
-          </div>
-        </div>
-
-    <!-- Container (About Section) -->
-    <div class="w3-display-container first-background">
-
-      <div class="w3-content w3-container w3-padding-64" id="about">
-        <h3 class="w3-center blue frosted" style="font-family: 'robgravesmedium';">ABOUT US</h3>
-        <hr>
-        <div class="frosted a-content">
-          <div class="w3-row">
-
-            <p class="body-text"><span class="dark-blue" style="font-family: 'robgravesmedium'; font-size: 30px;">The
-                Sammy Center</span> is founded on the belief that every single child is amazing, and should be given
-              every opportunity to reach their God-given potential. We believe that a child who has experienced grief,
-              trauma, or loss has unique needs that need to be met. Creating a foundation of social emotional
-              wellbeing
-              will pave the way for positive future outcomes in their lives to follow. Adverse situations permeate all
-              socioeconomic backgrounds, therefore The Sammy Center is a place of equity and diversity which knows no
-              boundaries.
-            </p>
-          </div>
-          <div class="w3-row">
-            <p class="body-text"> We are a strengths focused center and meet every child right where they are. We want
-              to help guide every child in reaching their potential as a human. The Sammy Center wants to help build
-              children up at a young age to help mitigate and/or help them move through hardships and trauma so they
-              can
-              be successful adolescents and then adults. Each classroom is small in numbers and consists of three
-              highly
-              skilled professionals: two teachers and one BT (Behavior Technician). Families and children will also
-              have
-              access to an on-site mental health counselor and parenting classes. We at The Sammy Center believe in a
-              holistic approach and that a home-to-school model is vital for best outcomes.</p>
-          </div>
-
-          <div class="row">
-            <div class="column">
-              <img src="assets/markus-spiske-OO89_95aUC0-unsplash.webp" class="rounded">
-            </div>
-            <div class="column">
-              <p class="yellow" style="text-align: center; font-family: 'robgravesmedium'; font-size: 24px;">every
-                child
-              </p>
-              <img src="assets/ben-white-4K2lIP0zc_k-unsplash.webp" class="rounded">
-            </div>
-            <div class="column">
-              <img src="assets/gautam-arora-OVDtgUhUPBY-unsplash.webp" class="rounded">
-              <p class="yellow" style="text-align: center; font-family: 'robgravesmedium'; font-size: 24px;">deserves
-                to
-                succeed</p>
-            </div>
-            <div class="column">
-              <img src="assets/taylor-heery-p4zNAyza9_o-unsplash.webp" class="rounded">
-
-            </div>
-          </div>
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 tag-flex" id="home">
+    <div class="w3-margin glass">
+      <div class="item-1 w3-center crayon">
+        <div id="sammyCenterHeader" class="w3-padding-large">
+          <img src="assets/thesammycenter_header-removebg-preview.webp" class="w3-image" />
         </div>
       </div>
+
+      <div id="sammyCenterStatement" class="text-yellow crayon w3-large">
+        <em>fostering childrens' social emotional wellbeing</em>
+      </div>
     </div>
-    <!-- Second Parallax Image with Portfolio Text -->
-    <div class="bgimg-2 w3-display-container">
-      <div class="w3-container" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="10000">
-        <div id="quoteOnPage" class="w3-panel w3-border w3-border-black frosted" style="position: relative; top: -40px">
-          <span class="blue" style="font-size: 150px; line-height: 0.4em; opacity: 0.9">❝</span>
-          <p class="w3-xxlarge text-yellow w3-center" style="
-              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-              min-width: 50%;
-              min-height: 50%;
-              margin: -1% 0 -1% 0;
-              font-weight: bolder;
-            ">
-            We All Contribute To The Same Air Our Society Breathes
+  </div>
+
+  <!-- Container (About Section) -->
+  <div id="about" class="w3-content w3-container">
+    <div class="w3-section" style="width: 100%">
+      <h3 class="w3-center text-secondary-blue frosted w3-xxlarge">
+        ABOUT US
+      </h3>
+      <hr />
+    </div>
+    <div class="w3-section frosted">
+      <div class="w3-row w3-padding-large">
+        <div class="w3-half w3-padding-large">
+          <p class="w3-xlarge">
+            <span class="text-secondary-blue crayon w3-xlarge"><strong>The Sammy Center</strong></span>
+            is founded on the belief that every single child is amazing, and
+            should be given every opportunity to reach their God-given
+            potential.
           </p>
-          <span class="blue w3-right" style="
+          <p class="w3-xlarge">
+            We believe that a child who has experienced grief, trauma, or loss
+            has unique needs that need to be met.
+          </p>
+        </div>
+        <div class="w3-half w3-center w3-padding-large">
+          <img src="assets/markus-spiske-OO89_95aUC0-unsplash.webp" class="aboutimg w3-round-large" />
+        </div>
+      </div>
+      <div class="w3-row w3-padding-large">
+        <div class="w3-half w3-padding-large">
+          <p>
+            <img src="assets/ben-white-4K2lIP0zc_k-unsplash.webp" class="w3-round-large w3-image" />
+          </p>
+        </div>
+        <div class="w3-half w3-padding-large">
+          <p class="w3-xlarge">
+            Creating a foundation of social emotional wellbeing will pave the
+            way for positive future outcomes in their lives to follow.
+          </p>
+          <p class="w3-xlarge">
+            Adverse situations permeate all socioeconomic backgrounds,
+            therefore
+            <span class="text-secondary-blue crayon w3-xlarge"><strong>The Sammy Center</strong></span>
+            is a place of equity and diversity which knows no boundaries.
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-row w3-padding-large">
+        <div class="w3-half w3-padding-large">
+          <p class="w3-xlarge">
+            We are a strengths focused center and meet every child right where
+            they are. We want to help guide every child in reaching their
+            potential as a human.
+          </p>
+          <p class="w3-xlarge">
+            <span class="text-secondary-blue crayon w3-xlarge"><strong>The Sammy Center</strong></span>
+            wants to help build children up at a young age to help mitigate
+            and/or help them move through hardships and trauma so they can be
+            successful adolescents and then adults.
+          </p>
+        </div>
+        <div class="w3-half w3-padding-large">
+          <p>
+            <img src="assets/gautam-arora-OVDtgUhUPBY-unsplash.webp" class="w3-round-large w3-image" />
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-row w3-padding-large">
+        <div class="w3-half w3-center w3-padding-large">
+          <img src="assets/taylor-heery-p4zNAyza9_o-unsplash.webp" class="w3-round-large aboutimg" />
+        </div>
+        <div class="w3-half w3-padding-large">
+          <p class="w3-xlarge">
+            Each group is small in numbers and consists of three highly
+            skilled professionals. Families and children will also have access
+            to an on-site mental health counselor and parenting classes.
+          </p>
+          <p class="w3-xlarge">
+            We at
+            <span class="text-secondary-blue crayon w3-xlarge"><strong>The Sammy Center</strong></span>
+            believe in a holistic approach and that a home-to-school model is
+            vital for best outcomes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 quoteFlex">
+    <div class="glass-darker w3-content">
+      <div id="quoteOnPage">
+        <span class="text-yellow" style="font-size: 5rem; line-height: 0.4em; opacity: 0.9">❝</span>
+        <p class="crayon text-yellow w3-center w3-xxlarge">
+          We All Contribute To The Same Air Our Society Breathes
+        </p>
+        <span class="text-yellow w3-right" style="
               position: relative;
-              bottom: -70px;
-              font-size: 150px;
-              line-height: 0.6em;
+              font-size: 5rem;
+              bottom: -30px;
+              line-height: 0.4em;
               opacity: 0.9;
             ">&#10078;</span>
-        </div>
-      </div>
-
-      <div class="w3-display-middle glass-darker w3-margin-top">
-        <span class="w3-center w3-padding-large w3-xlarge w3-wide blue tag-flex"
-          style="font-family: 'robgravesmedium'">HOW WE SUCCEED</span>
       </div>
     </div>
+  </div>
 
+  <!-- Container About our Team -->
+  <div class="w3-content w3-container w3-padding-large" id="ourteam">
+    <h3 class="w3-center text-secondary-blue frosted w3-xxlarge">OUR TEAM</h3>
+    <hr />
 
-    <!-- Container About our Team -->
-    <div class="w3-content w3-container w3-padding-64" id="ourteam">
-      <h3 class="w3-center blue frosted" style="font-family: 'robgravesmedium';">OUR TEAM</h3>
-      <hr>
+    <div class="bio-flex w3-margin-bottom">
+      <div class="bio-flex-item frosted w3-padding">
+        <img src="assets/IMG_4171.webp" class="zoom rounded bio-img" />
+        <header class="text-secondary-blue w3-xlarge w3-padding">
+          Maria Soter
+        </header>
+        <div class="w3-large w3-padding-small">CEO/Founder</div>
 
-      <div class="grid-container">
-        <div class="grid-item frosted">
-          <img src="assets/IMG_4171.webp" style="width: auto;" height="300px;" class="zoom rounded bio-pic">
-          <div>
-            <p class="dark-blue" style="font-family: 'robgravesmedium'; font-size: 24px;">Maria Soter</p>
-            <p class="board-text">CEO/Founder</p>
-            <button type="button" class="collapsible yellow" style="font-family: 'robgravesmedium';">Learn
-              More</button>
-            <div class="content">
-              <p class="board-text">Maria Soter (CEO/Founder) has immersed herself in the world of Early Childhood for
-                over 25 years. At the inception of Salt Lake City's first Preschool for Homeless children in 1998 to
-                more recently, creating the Coaching Model and program for Head Start. Maria has always had a passion
-                to serve children and their families especially where a need is unmet. Her vision for The Sammy Center
-                became a reality in 2018 when she heard the CEO of a local program speak on behalf of the Early
-                Childhood mental health crisis that was on an uprising. She has made a commitment to herself, the
-                community and the children of Salt Lake City to give them an added level of support through The Sammy
-                Center. </p>
-            </div>
-
-          </div>
+        <button type="button" class="w3-btn w3-hover-text-yellow collapsible w3-text-white">
+          Learn More
+        </button>
+        <div class="content learn-more">
+          <p class="w3-medium w3-left-align">
+            Maria Soter (CEO/Founder) has immersed herself in the world of
+            Early Childhood for over 25 years. At the inception of Salt Lake
+            City's first Preschool for Homeless children in 1998 to more
+            recently, creating the Coaching Model and program for Head Start.
+            Maria has always had a passion to serve children and their
+            families especially where a need is unmet.
+          </p>
+          <p class="w3-medium w3-left-align">
+            Her vision for
+            <span class="text-secondary-blue crayon w3-large"><strong>The Sammy Center</strong></span>
+            became a reality in 2018 when she heard the CEO of a local program
+            speak on behalf of the Early Childhood mental health crisis that
+            was on an uprising. She has made a commitment to herself, the
+            community and the children of Salt Lake City to give them an added
+            level of support through The Sammy Center.
+          </p>
         </div>
-        <div class="grid-item frosted">
-          <img src="assets/Carolyn Christensen_03 cropped.webp" style="width:auto;" height="300px"
-            class="zoom rounded bio-pic">
-          <p class="dark-blue" style="font-family: 'robgravesmedium'; font-size: 24px;">Carolyn Christensen</p>
-          <p class="board-text">Md.E/RBT</p>
-          <button type="button" class="collapsible yellow" style="font-family: 'robgravesmedium';">Learn
-            More</button>
-          <div class="content">
-            <p class="board-text">Carolyn Christensen has been a board member of The Sammy Center since its
-              inception in 2020. Her passion, experience and dedication are unmatched. Carolyn comes to us with over
-              30 years in the Early Childhood Field. Her vast roles have included; Family Child Care Provider,
-              Preschool and Kindergarten Teacher, Director, Education Specialist, Early Childhood Specialist, Early
-              Childhood Manager and Consultant. In addition, Carolyn has taught adjunct classes at SLCC and for the
-              Early Childhood Community. She is a curriculum writer for Early Childhood and a Trained Touchpoints
-              facilitator. Above all she is a Mother and Grandmother, with one grandson in particular, who has
-              autism and that she adores. </p>
-          </div>
+      </div>
+
+      <div class="bio-flex-item frosted w3-padding">
+        <img src="assets/Carolyn Christensen_03 cropped.webp" class="zoom rounded bio-img" />
+        <header class="w3-xlarge text-secondary-blue w3-padding">
+          Carolyn Christensen
+        </header>
+        <div class="w3-large w3-padding-small">Md.E/RBT</div>
+        <button type="button" class="w3-btn w3-hover-text-yellow collapsible w3-text-white">
+          Learn More
+        </button>
+        <div class="content">
+          <p class="w3-medium w3-left-align">
+            Carolyn Christensen has been a board member of
+            <span class="text-secondary-blue crayon w3-large"><strong>The Sammy Center</strong></span>
+            since its inception in 2020. Her passion, experience and
+            dedication are unmatched. Carolyn comes to us with over 30 years
+            in the Early Childhood Field. Her vast roles have included; Family
+            Child Care Provider, Preschool and Kindergarten Teacher, Director,
+            Education Specialist, Early Childhood Specialist, Early Childhood
+            Manager and Consultant.
+          </p>
+          <p class="w3-medium w3-left-align">
+            In addition, Carolyn has taught adjunct classes at SLCC and for
+            the Early Childhood Community. She is a curriculum writer for
+            Early Childhood and a Trained Touchpoints facilitator. Above all
+            she is a Mother and Grandmother, with one grandson in particular,
+            who has autism and that she adores.
+          </p>
         </div>
+      </div>
 
-        <div class="grid-item frosted">
-          <img src="assets/IMG_0971 (1).webp" style="width:auto;" height="300px" class="zoom rounded bio-pic">
-          <div>
-            <p class="dark-blue" style="font-family: 'robgravesmedium'; font-size: 24px;">Karlyn Smith</p>
-            <p class="board-text">Secretary</p>
-            <button type="button" class="collapsible yellow" style="font-family: 'robgravesmedium';">Learn
-              More</button>
-            <div class="content">
-              <p class="board-text">Karlyn Smith graduated from the University of Utah. Her greatest passion is to
-                serve others in whatever capacity is needed. Her big heart keeps her busy volunteering wherever and
-                whenever she can. One of her greatest assets to The Sammy Center is her passion about making a
-                difference in our community by touching the lives of our young people. Her warm, kind nature and
-                willingness to do whatever is needed is an incredible asset to our board and community. </p>
-            </div>
-          </div>
+      <div class="bio-flex-item frosted w3-padding">
+        <img src="assets/IMG_0971 (1).webp" class="zoom rounded bio-img" />
+        <header class="text-secondary-blue w3-xlarge w3-padding">
+          Karlyn Smith
+        </header>
+        <div class="w3-large w3-padding-small">Secretary</div>
+        <button type="button" class="w3-btn w3-hover-text-yellow collapsible w3-text-white">
+          Learn More
+        </button>
+        <div class="content">
+          <p class="w3-medium w3-left-align">
+            Karlyn Smith graduated from the University of Utah. Her greatest
+            passion is to serve others in whatever capacity is needed. Her big
+            heart keeps her busy volunteering wherever and whenever she can.
+          </p>
+          <p class="w3-medium w3-left-align">
+            One of her greatest assets to
+            <span class="text-secondary-blue crayon w3-large"><strong>The Sammy Center</strong></span>
+            is her passion about making a difference in our community by
+            touching the lives of our young people. Her warm, kind nature and
+            willingness to do whatever is needed is an incredible asset to our
+            board and community.
+          </p>
         </div>
-        <div class="grid-item frosted">
+      </div>
 
-          <img src="assets/IMG_1092.webp" style="width: 80%;" height="80%;" class="zoom rounded bio-pic">
-          <p class="dark-blue" style="font-family: 'robgravesmedium'; font-size: 24px; margin-bottom: -15px;">Blithe
-            Cravens</p>
-          <p class="board-text">Attorney for District Attorneys office, Juvenile Branch</p>
-          <button type="button" class="collapsible yellow" style="font-family: 'robgravesmedium';">Learn
-            More</button>
-          <div class="content">
-            <p class="board-text">Blithe Cravens professional career and experience are what drew her to become
-              involved in The Sammy Center and serve on the board. Blithes background in Criminal Justice date back
-              to
-              1998. Since 2018 she has worked for the Salt Lake County District Attorney’s Office, as Senior Deputy
-              District Attorney, Supervisor Family and Sexual Violence Unit. She once shared that if she can just
-              keep
-              one child out of the system she would feel like she has done a good thing. Difficult as it is to have
-              the knowledge, and experience of what Blithe sees day-to-day, her commitment to making a difference
-              and
-              serving our community is a gift. </p>
-          </div>
-
-
+      <div class="bio-flex-item frosted w3-padding">
+        <img src="assets/IMG_1092.webp" class="zoom rounded bio-img" />
+        <header class="text-secondary-blue w3-xlarge w3-padding">
+          Blithe Cravens
+        </header>
+        <div class="w3-medium w3-padding-small">
+          Attorney for District Attorneys office, Juvenile Branch
+        </div>
+        <button type="button" class="w3-btn w3-hover-text-yellow collapsible w3-text-white">
+          Learn More
+        </button>
+        <div class="content">
+          <p class="w3-medium w3-left-align">
+            Blithe Cravens professional career and experience are what drew
+            her to become involved in
+            <span class="text-secondary-blue crayon w3-large"><strong>The Sammy Center</strong></span>
+            and serve on the board. Blithes background in Criminal Justice
+            dates back to 1998. Since 2018 she has worked for the Salt Lake
+            County District Attorney’s Office, as Senior Deputy District
+            Attorney, Supervisor Family and Sexual Violence Unit.
+          </p>
+          <p class="w3-medium w3-left-align">
+            She once shared that if she can just keep one child out of the
+            system she would feel like she has done a good thing. Difficult as
+            it is to have the knowledge, and experience of what Blithe sees
+            day-to-day, her commitment to making a difference and serving our
+            community is a gift.
+          </p>
         </div>
       </div>
     </div>
@@ -285,28 +327,27 @@
   </div>
 
   <!--Container (getinvolved)-->
-  <section id="getinvolved" class="w3-container">
+  <section id="getinvolved" class="w3-content w3-container w3-padding">
     <div class="flex w3-margin">
-
       <!-- Give time card -->
-      <div class="item-1 giveHandImg1">
+      <div class="item-1 giveHandImg1 w3-padding">
         <header class="w3-text-white">
           <h2>
-            Give
-            <span class="w3-xxxlarge w3-monospace w3-opacity-min yellow">Time</span>
+            give
+            <span class="w3-xxxlarge w3-monospace w3-opacity-min text-yellow">Time</span>
           </h2>
         </header>
-        <div class="w3-padding">
-          <p class="w3-tag bg-darkblue w3-round w3-block">
+        <div class="w3-padding bio-flex-item">
+          <p class="w3-tag bg-secondary-blue w3-round">
             Volunteer in a classroom
           </p>
-          <p class="w3-tag bg-darkblue w3-round w3-block">
+          <p class="w3-tag bg-secondary-blue w3-round">
             Assist our teachers with projects
           </p>
-          <p class="w3-tag bg-darkblue w3-round w3-block">
+          <p class="w3-tag bg-secondary-blue w3-round">
             Read to the children
           </p>
-          <p class="w3-tag bg-darkblue w3-round w3-block">
+          <p class="w3-tag bg-secondary-blue w3-round">
             Join us for a walk in the park
           </p>
         </div>
@@ -316,33 +357,29 @@
         </footer>
       </div>
 
-
-
-
-
       <!-- Give talent card -->
       <div class="item-2 giveHandImg2 w3-padding">
         <header class="w3-text-white">
           <h2>
-            Give
-            <span class="w3-xxxlarge w3-monospace w3-opacity-min yellow">Talent</span>
+            give
+            <span class="w3-xxxlarge w3-monospace w3-opacity-min text-yellow">Talent</span>
           </h2>
         </header>
         <p class="w3-text-white w3-center tag-flex">
           <span class="w3-xxlarge w3-block">Do you...</span>
-          <span class="w3-tag w3-round w3-margin bg-darkblue">sing?</span>
-          <span class="w3-tag w3-round w3-margin bg-darkblue">play an instrument?</span>
-          <span class="w3-tag w3-round w3-margin bg-darkblue">dance?</span>
-          <span class="w3-tag w3-round w3-margin bg-darkblue">do art?</span>
+          <span class="w3-tag w3-round w3-margin bg-secondary-blue">sing?</span>
+          <span class="w3-tag w3-round w3-margin bg-secondary-blue">play an instrument?</span>
+          <span class="w3-tag w3-round w3-margin bg-secondary-blue">dance?</span>
+          <span class="w3-tag w3-round w3-margin bg-secondary-blue">do art?</span>
         </p>
         <div class="w3-text-white">
           <span class="w3-medium">In-Kind support includes but not limited to;</span>
         </div>
         <p class="w3-center tag-flex">
-          <span class="w3-tag w3-round w3-margin bg-darkblue">graphic artists</span>
-          <span class="w3-tag bg-darkblue w3-round w3-margin">web design maintenance</span>
-          <span class="w3-tag bg-darkblue w3-round w3-margin">construction</span>
-          <span class="w3-tag bg-darkblue w3-round w3-margin">cleaning services</span>
+          <span class="w3-tag w3-round w3-margin bg-secondary-blue">graphic artists</span>
+          <span class="w3-tag bg-secondary-blue w3-round w3-margin">web design maintenance</span>
+          <span class="w3-tag bg-secondary-blue w3-round w3-margin">construction</span>
+          <span class="w3-tag bg-secondary-blue w3-round w3-margin">cleaning services</span>
         </p>
 
         <footer class="w3-text-white w3-padding w3-center">
@@ -350,173 +387,301 @@
         </footer>
       </div>
 
-
       <!-- Give treasure card -->
       <div class="item-3 giveHandImg3 w3-padding">
         <header class="w3-center w3-text-white">
           <h2>
-            Give
+            give
             <span class="w3-xxxlarge text-yellow w3-monospace w3-opacity-min">Treasure</span>
           </h2>
         </header>
-        <div class="item-3 w3-text-white w3-padding">
+        <div class="w3-padding">
           <!-- Founding Parter Details -->
-          <div id="accordionItemOneBtn" onclick="accordion('accordionItemOne',this.id)" class="
-                card-width
+          <div id="accordionItemOneBtn" onclick="accordion('accordionItemOne')" class="
                 bg-secondary-blue
-                w3-padding w3-round-medium w3-xlarge
+                w3-text-white
+                w3-padding
+                w3-round-medium
+                w3-xlarge
+                w3-margin-bottom
               ">
             <span>FOUNDING PARTNER</span>
-            <span class="w3-medium w3-hide-small w3-hide-medium">Gifts of $50,000 plus</span><span><i
-                class="fa fa-caret-down w3-xxlarge w3-margin-left middlepos" aria-hidden="true"></i></span>
+            <span class="
+                  w3-padding w3-small w3-hide-small w3-hide-medium w3-right
+                ">Gifts of $50,000 plus
+              <i class="fa fa-caret-down w3-xxlarge middlepos" aria-hidden="true"></i></span>
+            <span class="w3-hide-large w3-hide-medium">
+              <i class="fa fa-caret-down w3-xxlarge middlepos-small" aria-hidden="true"></i>
+            </span>
           </div>
 
-
-          <div id="accordionItemOne" class="w3-container frosted  w3-hide w3-animate-right">
-            <ul class=""><span class="w3-hide-large">Gifts of $50,000 plus</span>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Receives named recognition of partnership via The Sammy Center
-                  facility
-                  naming</p>
+          <div id="accordionItemOne" class="
+                w3-container
+                frosted
+                w3-hide w3-animate-right w3-margin-bottom
+              ">
+            <ul class="">
+              <span class="w3-hide-large">Gifts of $50,000 plus</span>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o w3-xxlarge w3-padding-small text-red" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Receives named recognition of partnership via
+                  <span class="text-secondary-blue crayon w3-large">The Sammy Center</span>
+                  facility naming
+                </p>
               </li>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Invited to participate in ribbon cutting ceremony, featured
-                  guest at facility open house</p>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o w3-xxlarge w3-padding-small text-red" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Invited to participate in ribbon cutting ceremony, featured
+                  guest at facility open house
+                </p>
               </li>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Receives a curated tour of the facility and The Sammy Center’s
-                  programming</p>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Receives a curated tour of the facility and
+                  <span class="text-secondary-blue crayon w3-large">The Sammy Center</span>’s programming
+                </p>
               </li>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Receives 10 seats at annual fundraising event</p>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Receives 10 seats at annual fundraising event
+                </p>
               </li>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Name recognition on websites, social media, and newsletters, and
-                  annual
-                  report.</p>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Name recognition on websites, social media, and newsletters,
+                  and annual report.
+                </p>
               </li>
             </ul>
           </div>
+
           <!-- Gold partner details -->
-          <div id="accordionItemTwoBtn" onclick="accordion('accordionItemTwo',this.id)"
-            class="bg-secondary-blue w3-padding w3-round-medium w3-xlarge card-width">
-            GOLD PARTNER <span class="w3-medium w3-hide-small w3-hide-medium">Gifts of $25,000 -
-              $49,999</span><span><i class="fa fa-caret-down w3-xxlarge w3-margin-left middlepos"
-                aria-hidden="true"></i></span></div>
+          <div id="accordionItemTwoBtn" onclick="accordion('accordionItemTwo')" class="
+                bg-secondary-blue
+                w3-margin-bottom
+                w3-padding
+                w3-round-medium
+                w3-xlarge
+                w3-text-white
+              ">
+            <span>GOLD PARTNER</span>
+            <span class="
+                  w3-padding w3-small w3-hide-small w3-hide-medium w3-right
+                ">Gifts of $25,000 - $49,999
+              <i class="fa fa-caret-down w3-xxlarge middlepos" aria-hidden="true"></i>
+            </span>
+            <span class="w3-hide-large w3-hide-medium">
+              <i class="fa fa-caret-down w3-xxlarge middlepos-small" aria-hidden="true"></i>
+            </span>
+          </div>
 
-          <div id="accordionItemTwo" class="w3-container frosted  w3-hide w3-animate-right">
-            <ul class=""><span class="w3-hide-large">Gifts of $25,000 - $49,999</span>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Receives donor recognition plaque on donor wall</p>
-              </li>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Invited to attend ribbon cutting ceremony of facility</p>
-              </li>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Opportunity to name a classroom/space in The Sammy Center facility
+          <div id="accordionItemTwo" class="
+                w3-container
+                frosted
+                w3-hide w3-animate-right w3-margin-bottom
+              ">
+            <ul class="">
+              <span class="w3-hide-large">Gifts of $25,000 - $49,999</span>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Receives donor recognition plaque on donor wall
                 </p>
               </li>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Receives 5 seats at annual fundraising event</p>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Invited to attend ribbon cutting ceremony of facility
+                </p>
               </li>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Logo and/or name recognition on websites, social media,
-                  newsletters, and
-                  annual report</p>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Opportunity to name a classroom/space in
+                  <span class="text-secondary-blue crayon w3-large">The Sammy Center</span>
+                  facility
+                </p>
+              </li>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Receives 5 seats at annual fundraising event
+                </p>
+              </li>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Logo and/or name recognition on websites, social media,
+                  newsletters, and annual report
+                </p>
               </li>
             </ul>
           </div>
+
           <!-- Silver partner details -->
-          <div id="accordionItemThreeBtn" onclick="accordion('accordionItemThree',this.id)"
-            class="bg-secondary-blue w3-padding w3-round-medium w3-xlarge card-width">
-            SILVER PARTNER <span class="w3-medium w3-hide-small w3-hide-medium">Gifts of $5,000 -
-              $24,999</span><span><i class="fa fa-caret-down w3-xxlarge w3-margin-left middlepos"
-                aria-hidden="true"></i></span></div>
+          <div id="accordionItemThreeBtn" onclick="accordion('accordionItemThree',this.id)" class="
+                bg-secondary-blue
+                w3-margin-bottom
+                w3-text-white
+                w3-padding
+                w3-round-medium
+                w3-xlarge
+              ">
+            <span>SILVER PARTNER</span>
+            <span class="
+                  w3-padding w3-small w3-hide-small w3-hide-medium w3-right
+                ">Gifts of $5,000 - $24,999
+              <i class="fa fa-caret-down w3-xxlarge middlepos" aria-hidden="true"></i>
+            </span>
+            <span class="w3-hide-large w3-hide-medium">
+              <i class="fa fa-caret-down w3-xxlarge middlepos-small" aria-hidden="true"></i>
+            </span>
+          </div>
 
-          <div id="accordionItemThree" class="w3-container frosted  w3-hide w3-animate-right">
-            <ul class=""><span class="w3-hide-large">Gifts of $5,000 - $24,999</span>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Receives donor recognition plaque on donor wall</p>
+          <div id="accordionItemThree" class="
+                w3-container
+                frosted
+                w3-hide w3-animate-right w3-margin-bottom
+              ">
+            <ul class="">
+              <span class="w3-hide-large">Gifts of $5,000 - $24,999</span>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Receives donor recognition plaque on donor wall
+                </p>
               </li>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Invited to participate in ribbon cutting ceremony, featured
-                  guest at facility open house</p>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Invited to participate in ribbon cutting ceremony, featured
+                  guest at facility open house
+                </p>
               </li>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Receives 2 seats at annual fundraising event</p>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Receives 2 seats at annual fundraising event
+                </p>
               </li>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Logo and/or name recognition on websites, social media,
-                  newsletters, and
-                  annual report.</p>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Logo and/or name recognition on websites, social media,
+                  newsletters, and annual report.
+                </p>
               </li>
             </ul>
           </div>
+
           <!-- Bronze partner details-->
-          <div id="accordionItemFourBtn" onclick="accordion('accordionItemFour',this.id)"
-            class="bg-secondary-blue w3-padding w3-round-medium w3-xlarge card-width">
-            BRONZE PARTNER <span class="w3-medium w3-hide-small w3-hide-medium">Gifts of $1,000 -
-              $4,999</span><span><i class="fa fa-caret-down w3-xxlarge w3-margin-left middlepos"
-                aria-hidden="true"></i></span></div>
+          <div id="accordionItemFourBtn" onclick="accordion('accordionItemFour',this.id)" class="
+                bg-secondary-blue
+                w3-margin-bottom
+                w3-text-white
+                w3-padding
+                w3-round-medium
+                w3-xlarge
+              ">
+            <span>BRONZE PARTNER</span>
+            <span class="
+                  w3-padding w3-small w3-hide-small w3-hide-medium w3-right
+                ">Gifts of $1,000 - $4,999
+              <i class="fa fa-caret-down w3-xxlarge middlepos" aria-hidden="true"></i>
+            </span>
+            <span class="w3-hide-large w3-hide-medium">
+              <i class="fa fa-caret-down w3-xxlarge middlepos-small" aria-hidden="true"></i>
+            </span>
+          </div>
 
-          <div id="accordionItemFour" class="w3-container frosted  w3-hide w3-animate-right">
-            <ul class=""><span class="w3-hide-large">Gifts of $1,000 - $4,999</span>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Receives donor recognition plaque on donor wall</p>
+          <div id="accordionItemFour" class="
+                w3-container
+                frosted
+                w3-hide w3-animate-right w3-margin-bottom
+              ">
+            <ul class="">
+              <span class="w3-hide-large">Gifts of $1,000 - $4,999</span>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Receives donor recognition plaque on donor wall
+                </p>
               </li>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Logo and/or name recognition on websites, social media, and in
-                  newsletters</p>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Logo and/or name recognition on websites, social media, and
+                  in newsletters
+                </p>
               </li>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Invitation to annual fundraising event</p>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Invitation to annual fundraising event
+                </p>
               </li>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Listed as an annual supporter in The Sammy Center Annual Report
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Listed as an annual supporter in
+                  <span class="text-secondary-blue crayon w3-large">The Sammy Center</span>
+                  Annual Report
                 </p>
               </li>
             </ul>
           </div>
-          <!-- Individual partner details -->
-          <div id="accordionItemFiveBtn" onclick="accordion('accordionItemFive',this.id)"
-            class="bg-secondary-blue w3-padding w3-round-medium w3-xlarge card-width">
-            INDIVIDUAL PARTNER <span class="w3-medium w3-hide-small w3-hide-medium">Gifts of $999 &
-              under</span><span><i class="fa fa-caret-down w3-xxlarge w3-margin-left middlepos"
-                aria-hidden="true"></i></span></div>
 
-          <div id="accordionItemFive" class="w3-container frosted  w3-hide w3-animate-right">
-            <ul><span class="w3-hide-large">Gifts of $999 & under</span>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Listed as an annual supporter in The Sammy Center Annual Report
+          <!-- Individual partner details -->
+          <div id="accordionItemFiveBtn" onclick="accordion('accordionItemFive',this.id)" class="
+                bg-secondary-blue
+                w3-margin-bottom
+                w3-text-white
+                w3-padding
+                w3-round-medium
+                w3-xlarge
+              ">
+            <span>INDIVIDUAL PARTNER</span>
+            <span class="
+                  w3-padding w3-small w3-hide-small w3-hide-medium w3-right
+                ">Gifts of $999 & under
+              <i class="fa fa-caret-down w3-xxlarge middlepos" aria-hidden="true"></i>
+            </span>
+            <span class="w3-hide-large w3-hide-medium">
+              <i class="fa fa-caret-down w3-xxlarge middlepos-small" aria-hidden="true"></i>
+            </span>
+          </div>
+
+          <div id="accordionItemFive" class="
+                w3-container
+                frosted
+                w3-hide w3-animate-right w3-margin-bottom
+              ">
+            <ul>
+              <span class="w3-hide-large">Gifts of $999 & under</span>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Listed as an annual supporter in
+                  <span class="text-secondary-blue crayon w3-large">The Sammy Center</span>
+                  Annual Report
                 </p>
               </li>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Recognition via social media outlets</p>
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Recognition via social media outlets
+                </p>
               </li>
-              <li class="w3-panel bg-yellow blue w3-padding card-flex"><i
-                  class="fa fa-heart-o w3-container w3-xxlarge w3-padding" aria-hidden="true"></i>
-                <p class="w3-padding w3-medium">Invitation to annual fundraising event</p>
-
+              <li class="w3-panel w3-padding-small card-flex">
+                <i class="fa fa-heart-o text-red w3-xxlarge w3-padding-small" aria-hidden="true"></i>
+                <p class="w3-padding-small w3-medium">
+                  Invitation to annual fundraising event
+                </p>
               </li>
             </ul>
           </div>
@@ -527,71 +692,85 @@
       <div class="item-1 giveHandImg4 w3-padding">
         <header class="w3-text-white w3-center">
           <h2>
-            Give
+            give
             <span class="w3-xxxlarge w3-monospace w3-opacity-min text-yellow">Education</span>
           </h2>
         </header>
-        <div class="item-4">
-          <div class="w3-card w3-center w3-padding-small frosted w3-text-white">
-            <header class="w3-container w3-xxlarge bg-secondary-blue">
-              One Week
+        <div class="item-4 w3-margin-bottom">
+          <div class="w3-center w3-padding-small glass w3-text-white">
+            <header class="w3-container w3-large bg-secondary-blue">
+              1 Week
             </header>
-            <p class="w3-container w3-xxxlarge text-yellow">$200</p>
-            <footer class="w3-text-white w3-xlarge bg-secondary-blue">
+            <p class="w3-container w3-xxlarge text-yellow w3-opacity-min">
+              $200
+            </p>
+            <footer class="w3-text-white w3-large bg-secondary-blue">
               of child's tuition
             </footer>
           </div>
-          <div class="w3-card w3-center w3-padding-small frosted w3-text-white">
-            <header class="w3-container w3-xxlarge bg-secondary-blue">
-              Two Weeks
+          <div class="w3-card w3-center w3-padding-small glass w3-text-white">
+            <header class="w3-container w3-large bg-secondary-blue">
+              2 Weeks
             </header>
-            <p class="w3-container w3-xxxlarge text-yellow">$400</p>
-            <footer class="w3-text-white w3-xlarge bg-secondary-blue">
+            <p class="w3-container w3-xxlarge text-yellow w3-opacity-min">
+              $400
+            </p>
+            <footer class="w3-text-white w3-large bg-secondary-blue">
               of child's tuition
             </footer>
           </div>
-          <div class="w3-card w3-center w3-padding-small frosted w3-text-white">
-            <header class="w3-container w3-xxlarge bg-secondary-blue">
-              Three Weeks
+          <div class="w3-card w3-center w3-padding-small glass w3-text-white">
+            <header class="w3-container w3-large bg-secondary-blue">
+              3 Weeks
             </header>
-            <p class="w3-container w3-xxxlarge text-yellow">$600</p>
-            <footer class="w3-text-white w3-xlarge bg-secondary-blue">
+            <p class="w3-container w3-xxlarge text-yellow w3-opacity-min">
+              $600
+            </p>
+            <footer class="w3-text-white w3-large bg-secondary-blue">
               of child's tuition
             </footer>
           </div>
-          <div class="w3-card w3-center w3-padding-small frosted w3-text-white">
-            <header class="w3-container w3-xxlarge bg-secondary-blue">
-              One Month
+          <div class="w3-card w3-center w3-padding-small glass w3-text-white">
+            <header class="w3-container w3-large bg-secondary-blue">
+              1 Month
             </header>
-            <p class="w3-container w3-xxxlarge text-yellow">$800</p>
-            <footer class="w3-text-white w3-xlarge bg-secondary-blue">
+            <p class="w3-container w3-xxlarge text-yellow w3-opacity-min">
+              $800
+            </p>
+            <footer class="w3-text-white w3-large bg-secondary-blue">
               of child's tuition
             </footer>
           </div>
-          <div class="w3-card w3-center w3-padding-small frosted w3-text-white">
-            <header class="w3-container w3-xxlarge bg-secondary-blue">
-              One Quarter
+          <div class="w3-card w3-center w3-padding-small glass w3-text-white">
+            <header class="w3-container w3-large bg-secondary-blue">
+              1 Quarter
             </header>
-            <p class="w3-container w3-xxxlarge text-yellow">$2,400</p>
-            <footer class="w3-text-white w3-xlarge bg-secondary-blue">
+            <p class="w3-container w3-xxlarge text-yellow w3-opacity-min">
+              $2,400
+            </p>
+            <footer class="w3-text-white w3-large bg-secondary-blue">
               of child's tuition
             </footer>
           </div>
-          <div class="w3-card w3-center w3-padding-small frosted w3-text-white">
-            <header class="w3-container w3-xxlarge bg-secondary-blue">
-              Six Months
+          <div class="w3-card w3-center w3-padding-small glass w3-text-white">
+            <header class="w3-container w3-large bg-secondary-blue">
+              6 Months
             </header>
-            <p class="w3-container w3-xxxlarge text-yellow">$4,800</p>
-            <footer class="w3-text-white w3-xlarge bg-secondary-blue">
+            <p class="w3-container w3-xxlarge text-yellow w3-opacity-min">
+              $4,800
+            </p>
+            <footer class="w3-text-white w3-large bg-secondary-blue">
               of child's tuition
             </footer>
           </div>
-          <div class="w3-card w3-center w3-padding-small frosted w3-text-white">
-            <header class="w3-container w3-xxlarge bg-secondary-blue">
-              One Year
+          <div class="w3-card w3-center w3-padding-small glass w3-text-white">
+            <header class="w3-container w3-large bg-secondary-blue">
+              1 Year
             </header>
-            <p class="w3-container w3-xxxlarge text-yellow">$9,600</p>
-            <footer class="w3-text-white w3-xlarge bg-secondary-blue">
+            <p class="w3-container w3-xxlarge text-yellow w3-opacity-min">
+              $9,600
+            </p>
+            <footer class="w3-text-white w3-large bg-secondary-blue">
               of child's tuition
             </footer>
           </div>
@@ -604,7 +783,6 @@
     </div>
   </section>
 
-
   <!-- 4th Parallax -->
   <div class="bgimg-3 w3-display-container">
     <div class="w3-display-middle glass-darker">
@@ -613,77 +791,72 @@
     </div>
   </div>
 
-
   <!-- Container (Contact Section) -->
-  <div class="w3-container w3-padding-64" id="contact">
-    <div class="w3-container frosted border-purple">
-      <p class="w3-center text-yellow w3-xxlarge">
-        <em>Get in touch with us</em>
-      </p>
-      <p class="w3-center text-yellow w3-large">
-        We'd love your help or insight!
+  <div class="w3-container w3-content w3-padding" id="contact">
+    <div class="w3-section frosted">
+      <p class="w3-center text-secondary-blue w3-xxlarge">
+        <strong>Get in touch with us</strong>
       </p>
     </div>
 
-    <div class="w3-row w3-section">
-      <div class="
-            w3-third w3-center w3-padding-small
-            frosted
-            w3-mobile
-            border-purple
-          ">
-        <div class="w3-large w3-padding w3-text-white">
-          <i class="
-                fa fa-map-marker fa-fw
-                w3-hover-text-black w3-xlarge w3-margin-right
-              "></i>
-          Salt Lake City, UT<br />
-          <i class="
-                fa fa-phone fa-fw
-                w3-hover-text-black w3-xlarge w3-margin-right
-              "></i>
-          Phone: 801-631-2006<br />
-          <i class="
-                fa fa-envelope fa-fw
-                w3-hover-text-black w3-xlarge w3-margin-right
-              "></i>
-          Email: thesammycenter@gmail.com<br />
+    <div class="w3-section">
+      <div class="w3-row w3-padding-small frosted w3-mobile">
+        <div class="w3-rest w3-large w3-padding">
+          <span><i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i>
+            Salt Lake City, UT</span><br />
+          <span>
+            <i class="fa fa-phone fa-fw w3-xlarge w3-margin-right"></i>
+            Phone: 801-631-2006</span><br />
+          <span><i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i>
+            Email: thesammycenter@gmail.com</span><br />
         </div>
       </div>
 
-      <div class="w3-twothird w3-center w3-padding-small w3-mobile">
+      <div class="w3-section w3-center w3-mobile">
         <h3 id="thank-you" class="w3-center w3-hide">Thank you!</h3>
-        <form method="post" action="/componets/contact-form.php" id="contact-form" class="frosted border-purple">
+        <form method="post" action="/componets/contact-form.php" id="contact-form" class="frosted w3-padding-small">
           <div class="w3-row w3-padding-small">
             <div class="w3-half w3-padding-small">
-              <input class="w3-input w3-transparent" type="text" placeholder="First Name" required name="fName" />
+              <input class="
+                    w3-input w3-transparent w3-border-bottom w3-border-black
+                  " type="text" placeholder="First Name" required name="fName" />
             </div>
             <div class="w3-half w3-padding-small">
-              <input class="w3-input w3-transparent" type="text" placeholder="Last Name" required name="lName" />
+              <input class="
+                    w3-input w3-transparent w3-border-bottom w3-border-black
+                  " type="text" placeholder="Last Name" required name="lName" />
             </div>
           </div>
           <div class="w3-row w3-padding-small">
             <div class="w3-col w3-padding-small">
-              <input class="w3-input w3-transparent" type="email" placeholder="Email" required name="Email" />
+              <input class="
+                    w3-input w3-transparent w3-border-bottom w3-border-black
+                  " type="email" placeholder="Email" required name="Email" />
             </div>
           </div>
           <div class="w3-row w3-padding-small">
             <div class="w3-col w3-padding-small">
-              <textarea class="w3-input w3-transparent" type="text" placeholder="Message" required
-                name="Message"></textarea>
+              <textarea class="
+                    w3-input w3-transparent w3-border-bottom w3-border-black
+                  " type="text" placeholder="Message" required name="Message"></textarea>
             </div>
           </div>
-          <div class="w3-row-padding w3-text-white">
-            <h3 class="text-yellow">How would you like to help?</h3>
-            <label><input class="w3-check" name="help[]" type="checkbox" value="volunteer" />
+          <div class="w3-row-padding">
+            <h3 class="text-secondary-blue">How would you like to help?</h3>
+            <label class="w3-padding-small"><input class="w3-check" name="help[]" type="checkbox" value="volunteer" />
               Volunteer</label>
-            <label><input class="w3-check" type="checkbox" name="help[]" value="donate" />
+            <label class="w3-padding-small"><input class="w3-check" type="checkbox" name="help[]" value="donate" />
               Donate</label>
-            <label><input class="w3-check" type="checkbox" name="help[]" value="Request more info" />
+            <label class="w3-padding-small"><input class="w3-check" type="checkbox" name="help[]"
+                value="Request more info" />
               Request more information</label>
           </div>
 
-          <button class="w3-button bg-darkblue w3-text-white w3-section" type="submit">
+          <button class="
+                w3-btn w3-hover-text-yellow
+                bg-secondary-blue
+                w3-text-white w3-section
+              " type="submit">
             <i class="fa fa-paper-plane"></i> SEND MESSAGE
           </button>
         </form>
@@ -692,8 +865,10 @@
   </div>
 
   <!-- Footer -->
-  <footer class="w3-center alt-blue w3-padding-64">
-    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <footer class="w3-center bg-secondary-blue w3-padding">
+    <a href="#home" class="
+          w3-btn w3-transparent w3-border w3-border-black w3-hover-text-white
+        "><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
     <div class="w3-xlarge w3-section">
       <i class="fa fa-facebook-official w3-hover-opacity"></i>
       <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -703,27 +878,6 @@
       <i class="fa fa-linkedin w3-hover-opacity"></i>
     </div>
   </footer>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-    //learn more dropdown
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
-    }
-  </script>
-
 </body>
 
 </html>
