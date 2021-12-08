@@ -19,7 +19,7 @@
   --naples-yellow: #f9dc5cff;
   --dark-purple: #4b1d3fff;
 
-  background-image: url("../assets/sharon-mccutcheon-O2u6gA2esAI-unsplash-min.webp");
+  background-image: url("../assets/background-main.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -222,25 +222,25 @@ html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url("../assets/sharon-mccutcheon-O2u6gA2esAI-unsplash-min.webp");
+  background-image: url("../assets/background-main.jpg");
   min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("../assets/nathan-dumlao-P5MXtYfgmmw-unsplash-min.webp");
+  background-image: url("../assets/bgimg-2.jpg");
   min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("../assets/daiga-ellaby-JZ51o_-UOY8-unsplash-min.webp");
+  background-image: url("../assets/bgimg-3.jpg");
   min-height: 300px;
 }
 
 /* Fourth image (Contact) */
 .bgimg-4 {
-  background-image: url("../assets/image8.webp");
+  background-image: url("../assets/bgimg-4.jpg");
   min-height: 300px;
 }
 
@@ -272,7 +272,7 @@ li {
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url("../assets/hourglass.webp");
+    url("../assets/hourglass.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -286,7 +286,7 @@ li {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url("../assets/talent.webp");
+    url("../assets/talent.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -300,7 +300,7 @@ li {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url("../assets/treasure.webp");
+    url("../assets/treasure.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -314,7 +314,7 @@ li {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url("../assets/classroom.webp");
+    url("../assets/classroom.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
