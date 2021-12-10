@@ -205,9 +205,9 @@ html {
   transform-origin: bottom left;
 }
 
-#home {
+/* #home {
   background-color: white;
-}
+} */
 
 /* Create a Parallax Effect */
 .bgimg-1,
@@ -244,13 +244,31 @@ html {
   min-height: 300px;
 }
 
-/* Turn off parallax scrolling for tablets and phones 
+/* Turn off parallax scrolling for tablets and phones */ 
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
+  :root{
+    background-image: url("../assets/background-main.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 180vh;
+  } 
+  
+  .bgimg-1{
+    background-image: none;
+    min-height: 600px;
   }
-}*/
+
+  .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: scroll;
+    min-height: 50vh;
+  }
+
+  .giveHandImg1, .giveHandImg2, .giveHandImg3, .giveHandImg4{
+    background-attachment: scroll;
+  }
+
+}
 
 .border-purple {
   border: 2px solid var(--dark-purple);
