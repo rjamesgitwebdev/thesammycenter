@@ -67,3 +67,21 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+/* giveEducation carousel */
+
+const LeftArrow= document.getElementById('leftArrow');
+const RightArrow = document.getElementById('rightArrow');
+const radioColl = document.getElementsByName('position');
+var startingRadio = 3;
+
+LeftArrow.addEventListener("click", function(){
+  startingRadio--;
+  radioColl[startingRadio].checked = "true";
+});
+
+RightArrow.addEventListener("click", function(){
+  startingRadio++;
+  radioColl[startingRadio].checked = "true";
+});
+

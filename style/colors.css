@@ -1,5 +1,5 @@
 :root{
-/* 
+
 /* CSS HEX */
 --middle-blue-green: #8ae3daff;
 --red-crayola: #ed254eff;
@@ -13,10 +13,23 @@
 --blue-sapphire: hsla(200, 33%, 35%, 1);
 --naples-yellow: hsla(49, 93%, 67%, 1);
 --dark-purple: hsla(316, 44%, 20%, 1);
- --primary:var(--middle-blue-green)
- */
+ --primary:var(--middle-blue-green);
+ 
+/* CSS HEX */
+--bone: #ece2d0ff;
+--eerie-black: #141414ff;
+--fire-opal: #ef6351ff;
+--black-coral: #5f616dff;
+--cadet-blue: #4c9eaaff;
 
+/* CSS HSL */
+--bone: hsla(39, 42%, 87%, 1);
+--eerie-black: hsla(0, 0%, 8%, 1);
+--fire-opal: hsla(7, 83%, 63%, 1);
+--black-coral: hsla(231, 7%, 40%, 1);
+--cadet-blue: hsla(188, 38%, 48%, 1);
 
 }
 
 
+  
