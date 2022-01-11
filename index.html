@@ -19,6 +19,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,17 +31,18 @@
 
     <!-- scripts -->
     <script src="src/main.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
       <div class="w3-bar" id="myNavbar">
-        <a
+        <a 
           class="
             w3-bar-item
             w3-button
-            w3-hover-blue-gray
+            hover-underline-animation
             w3-hide-medium
             w3-hide-large
             w3-left
@@ -50,14 +52,14 @@
           onclick="toggleFunction()"
           title="Toggle Navigation Menu"
         >
-          <i class="fa fa-bars"></i>
+          <i id="myNavLines" class="fa fa-bars"></i>
         </a>
         <a
           href="#home"
           class="
             w3-bar-item w3-button
             hover-underline-animation
-            w3-hide-large w3-hide-medium w3-right
+            w3-hide-large w3-hide-medium w3-right w3-large
           "
           ><i class="fa fa-home w3-large"></i> HOME</a
         >
@@ -91,31 +93,31 @@
 
       <!-- Navbar on small screens -->
       <div
-        id="navDemo"
+        id="navMobile"
         class="w3-bar-block frosted w3-hide w3-hide-large w3-hide-medium"
       >
         <a
           href="#about"
-          class="w3-bar-item w3-button"
+          class="w3-bar-item w3-button hover-underline-animation"
           onclick="toggleFunction()"
           >ABOUT US</a
         >
         <a
           href="#ourteam"
-          class="w3-bar-item w3-button"
+          class="w3-bar-item w3-button hover-underline-animation"
           onclick="toggleFunction()"
           >OUR TEAM</a
         >
 
         <a
           href="#getinvolved"
-          class="w3-bar-item w3-button"
+          class="w3-bar-item w3-button hover-underline-animation"
           onclick="toggleFunction()"
           >GET INVOLVED</a
         >
         <a
           href="#contact"
-          class="w3-bar-item w3-button"
+          class="w3-bar-item w3-button hover-underline-animation"
           onclick="toggleFunction()"
           >GET CONNECTED</a
         >
@@ -140,7 +142,7 @@
         <h3 class="w3-center frosted w3-xxlarge">ABOUT US</h3>
       </div>
       <div class="w3-section frosted">
-        <div class="w3-row w3-padding-large">
+        <div class="w3-row w3-padding-large" >
           <div class="w3-half w3-padding-large">
             <p class="w3-xlarge">
               <strong>The Sammy Center</strong>
@@ -164,8 +166,8 @@
             </picture>
           </div>
         </div>
-        <div class="w3-row w3-padding-large">
-          <div class="w3-half w3-padding-large w3-hide-small w3-hide-medium">
+        <div class="w3-row w3-padding-large" data-aos="fade-up">
+          <div class="w3-half w3-padding-large w3-hide-small">
             <p>
               <picture>
                 <source srcset="assets/ben-white-4K2lIP0zc_k-unsplash.jpg" />
@@ -189,9 +191,21 @@
               is a place of equity and diversity which knows no boundaries.
             </p>
           </div>
+          <div class="w3-half w3-padding-large w3-hide-large w3-hide-medium">
+            <p>
+              <picture>
+                <source srcset="assets/ben-white-4K2lIP0zc_k-unsplash.jpg" />
+                <img
+                  src="assets/ben-white-4K2lIP0zc_k-unsplash.webp"
+                  class="w3-round-large w3-image"
+                  alt="young boy sitting on a bench reading laughing out loud"
+                />
+              </picture>
+            </p>
+          </div>
         </div>
 
-        <div class="w3-row w3-padding-large">
+        <div class="w3-row w3-padding-large" data-aos="fade-up">
           <div class="w3-half w3-padding-large">
             <p class="w3-xlarge">
               We are a strengths focused center and meet every child right where
@@ -205,7 +219,7 @@
               successful adolescents and then adults.
             </p>
           </div>
-          <div class="w3-half w3-padding-large w3-hide-small w3-hide-medium">
+          <div class="w3-half w3-padding-large w3-hide-small">
             <p>
               <picture>
                 <source srcset="assets/gautam-arora-OVDtgUhUPBY-unsplash.jpg" />
@@ -219,7 +233,7 @@
           </div>
         </div>
 
-        <div class="w3-row w3-padding-large">
+        <div class="w3-row w3-padding-large" data-aos="fade-up">
           <div class="w3-half w3-center w3-padding-large">
             <picture>
               <source srcset="assets/taylor-heery-p4zNAyza9_o-unsplash.jpg" />
@@ -251,7 +265,7 @@
 
     <!-- Second Parallax Image with Portfolio Text -->
     <div class="bgimg-2 quoteFlex">
-      <div class="glass-darker w3-content w3-margin">
+      <div class="glass-darker w3-content w3-margin" data-aos="fade-up">
         <div id="quoteOnPage">
           <span
             class="text-bone"
@@ -281,7 +295,7 @@
       <h3 class="w3-center frosted w3-xxlarge">OUR TEAM</h3>
 
       <div class="bio-flex w3-margin-bottom">
-        <div class="bio-flex-item frosted w3-padding">
+        <div class="bio-flex-item frosted w3-padding" data-aos="fade-down">
           <div class="bio-flex-img">
             <picture class="bio-flex-img">
               <source srcset="assets/MariaSoter.jpg" />
@@ -297,7 +311,7 @@
 
           <button
             type="button"
-            class="w3-btn w3-hover- collapsible w3-text-white"
+            class="w3-btn fire-opal-hover collapsible text-white"
           >
             Learn More
           </button>
@@ -322,7 +336,7 @@
           </div>
         </div>
 
-        <div class="bio-flex-item frosted w3-padding">
+        <div class="bio-flex-item frosted w3-padding" data-aos="fade-left">
           <div class="bio-flex-img">
             <picture>
               <source srcset="assets/CarolynChristensen.jpg" />
@@ -337,7 +351,7 @@
           <div class="w3-large w3-padding-small">Md.E/RBT</div>
           <button
             type="button"
-            class="w3-btn w3-hover- collapsible w3-text-white"
+            class="w3-btn fire-opal-hover collapsible text-white"
           >
             Learn More
           </button>
@@ -362,7 +376,7 @@
           </div>
         </div>
 
-        <div class="bio-flex-item frosted w3-padding">
+        <div class="bio-flex-item frosted w3-padding" data-aos="fade-right">
           <div class="bio-flex-img">
             <picture>
               <source srcset="assets/KarlynSmith.jpg" />
@@ -377,7 +391,7 @@
           <div class="w3-large w3-padding-small">Secretary</div>
           <button
             type="button"
-            class="w3-btn w3-hover- collapsible w3-text-white"
+            class="w3-btn fire-opal-hover collapsible text-white"
           >
             Learn More
           </button>
@@ -398,7 +412,7 @@
           </div>
         </div>
 
-        <div class="bio-flex-item frosted w3-padding">
+        <div class="bio-flex-item frosted w3-padding" data-aos="fade-up">
           <div class="bio-flex-img">
             <picture>
               <source srcset="assets/BlitheCravens.jpg" />
@@ -413,7 +427,7 @@
           <div class="w3-center w3-large w3-padding-small">
             Attorney for D.A.'s office, Juvenile Branch
           </div>
-          <button type="button" class="w3-btn collapsible w3-text-white">
+          <button type="button" class="w3-btn fire-opal-hover collapsible text-white">
             Learn More
           </button>
           <div class="content">
@@ -448,7 +462,7 @@
       <div class="flex">
       
         <!-- Give time card -->
-        <div class="item-1 frosted">
+        <div class="item-1 frosted" data-aos="fade-right" data-aos-duration="1000">
           <header>
             <h2 class="w3-xxlarge">give TIME</h2>
           </header>
@@ -464,7 +478,7 @@
         </div>
 
         <!-- Give talent card -->
-        <div class="item-1 frosted">
+        <div class="item-1 frosted" data-aos="fade-left" data-aos-duration="1000">
           <header>
             <h2 class="w3-xxlarge">give TALENT</h2>
           </header>
@@ -496,16 +510,15 @@
         </div>
 
         <!-- Give treasure card -->
-        <div class="item-3 frosted w3-padding">
+        <div class="item-3 frosted w3-padding" data-aos="fade-up" data-aos-duration="1000">
           <header>
             <h2 class="w3-xxlarge">give TREASURE</h2>
           </header>
           <div class="w3-padding">
             <!-- Founding Parter Details -->
             <div
-              id="accordionItemOneBtn"
-              onclick="accordion('accordionItemOne')"
               class="
+                accordion
                 bg-secondary
                 w3-text-white
                 w3-padding
@@ -522,7 +535,7 @@
                   aria-hidden="true"
                 ></i
               ></span>
-              <span class="w3-hide-large w3-hide-medium">
+              <span class="w3-hide-large">
                 <i
                   class="fa fa-caret-down w3-xxlarge middlepos-small"
                   aria-hidden="true"
@@ -531,7 +544,6 @@
             </div>
 
             <div
-              id="accordionItemOne"
               class="
                 w3-container
                 w3-transparent
@@ -566,9 +578,8 @@
 
             <!-- Gold partner details -->
             <div
-              id="accordionItemTwoBtn"
-              onclick="accordion('accordionItemTwo')"
               class="
+                accordion  
                 bg-secondary
                 w3-margin-bottom
                 w3-padding
@@ -585,7 +596,7 @@
                   aria-hidden="true"
                 ></i>
               </span>
-              <span class="w3-hide-large w3-hide-medium">
+              <span class="w3-hide-large">
                 <i
                   class="fa fa-caret-down w3-xxlarge middlepos-small"
                   aria-hidden="true"
@@ -594,7 +605,6 @@
             </div>
 
             <div
-              id="accordionItemTwo"
               class="
                 w3-container
                 w3-transparent
@@ -623,9 +633,8 @@
 
             <!-- Silver partner details -->
             <div
-              id="accordionItemThreeBtn"
-              onclick="accordion('accordionItemThree',this.id)"
               class="
+              accordion
                 bg-secondary
                 w3-margin-bottom
                 w3-text-white
@@ -642,7 +651,7 @@
                   aria-hidden="true"
                 ></i>
               </span>
-              <span class="w3-hide-large w3-hide-medium">
+              <span class="w3-hide-large">
                 <i
                   class="fa fa-caret-down w3-xxlarge middlepos-small"
                   aria-hidden="true"
@@ -651,7 +660,6 @@
             </div>
 
             <div
-              id="accordionItemThree"
               class="
                 w3-container
                 w3-transparent
@@ -679,9 +687,8 @@
 
             <!-- Bronze partner details-->
             <div
-              id="accordionItemFourBtn"
-              onclick="accordion('accordionItemFour',this.id)"
               class="
+              accordion
                 bg-secondary
                 w3-margin-bottom
                 w3-text-white
@@ -698,7 +705,7 @@
                   aria-hidden="true"
                 ></i>
               </span>
-              <span class="w3-hide-large w3-hide-medium">
+              <span class="w3-hide-large">
                 <i
                   class="fa fa-caret-down w3-xxlarge middlepos-small"
                   aria-hidden="true"
@@ -707,7 +714,6 @@
             </div>
 
             <div
-              id="accordionItemFour"
               class="
                 w3-container
                 w3-transparent
@@ -735,9 +741,8 @@
 
             <!-- Individual partner details -->
             <div
-              id="accordionItemFiveBtn"
-              onclick="accordion('accordionItemFive',this.id)"
               class="
+              accordion
                 bg-secondary
                 w3-margin-bottom
                 w3-text-white
@@ -754,7 +759,7 @@
                   aria-hidden="true"
                 ></i>
               </span>
-              <span class="w3-hide-large w3-hide-medium">
+              <span class="w3-hide-large">
                 <i
                   class="fa fa-caret-down w3-xxlarge middlepos-small"
                   aria-hidden="true"
@@ -763,7 +768,6 @@
             </div>
 
             <div
-              id="accordionItemFive"
               class="
                 w3-container
                 w3-transparent
@@ -788,7 +792,8 @@
         </div>
 
         <!-- Give education card -->
-        <div class="item-3 frosted">
+        <div class="item-3 frosted" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <header class="w3-center">
             <h2>
               give
@@ -796,64 +801,60 @@
                 >Education</span
               >
             </h2>
+            <div  class="w3-large w3-center">Sponsor a child with us!</div>
           </header>
           
             <div class="carousel-block w3-margin">
               <input type="radio" name="position" />
               <input type="radio" name="position" />
               <input type="radio" name="position" />
-              <input type="radio" name="position" checked />
+              <input type="radio" name="position" data-checked=0 checked />
               <input type="radio" name="position" />
               <input type="radio" name="position" />
               <input type="radio" name="position" />
-              <div id="leftArrow" class="carousel-left-arrow"><i class="fa fa-arrow-left w3-xxlarge text-coral"></i></div>
+              <div class="carousel-left-arrow"><i id="leftArrow" class="fa fa-arrow-left w3-xxlarge text-coral"></i></div>
               <main id="carousel">
                 
                 
                 <div class="item">
-                  <p class="w3-padding-24 text-white"><i class="fa fa-book w3-jumbo" ></i></p>
-                  <p class="w3-xxlarge text-white">1 Week</p>
-                  <p class="w3-xlarge text-white">$200</p>
+                  <div class="w3-padding-24 text-white"><i class="fa fa-book w3-jumbo" ></i></div>
+                  <div class="w3-xxlarge text-white">1 Week</div>
+                  <div class="w3-xlarge text-white">$200</div>
                 </div>
                 <div class="item">
-                  <p class="w3-padding-24 text-white"><i class="fa fa-book w3-jumbo" ></i></p>
-                  <p class="w3-xxlarge text-white">2 Weeks</p>
-                  <p class="w3-xlarge text-white">$400</p>
+                  <div class="w3-padding-24 text-white"><i class="fa fa-book w3-jumbo" ></i></div>
+                  <div class="w3-xxlarge text-white">2 Weeks</div>
+                  <div class="w3-xlarge text-white">$400</div>
                 </div>
                 <div class="item ">
-                  <p class="w3-padding-24 text-white"><i class="fa fa-book w3-jumbo" ></i></p>
-                  <p class="w3-xxlarge text-white">3 Weeks</p>
-                  <p class="w3-xlarge text-white">$600</p>
+                  <div class="w3-padding-24 text-white"><i class="fa fa-book w3-jumbo" ></i></div>
+                  <div class="w3-xxlarge text-white">3 Weeks</div>
+                  <div class="w3-xlarge text-white">$600</div>
                   
                 </div>
                 <div class="item">
-                  <p class="w3-padding-24 text-white"><i class="fa fa-book w3-jumbo" ></i></p>
-                  <p class="w3-xxlarge text-white">1 Month</p>
-                  <p class="w3-xlarge text-white">$800</p>
+                  <div class="w3-padding-24 text-white"><i class="fa fa-book w3-jumbo" ></i></div>
+                  <div class="w3-xxlarge text-white">1 Month</div>
+                  <div class="w3-xlarge text-white">$800</div>
                 </div>
                 <div class="item">
-                  <p class="w3-padding-24 text-white"><i class="fa fa-book w3-jumbo" ></i></p>
-                  <p class="w3-xxlarge text-white">1 Quarter</p>
-                  <p class="w3-xlarge text-white">$2400</p>
+                  <div class="w3-padding-24 text-white"><i class="fa fa-book w3-jumbo" ></i></div>
+                  <div class="w3-xxlarge text-white">1 Quarter</div>
+                  <div class="w3-xlarge text-white">$2400</div>
                 </div>
                 <div class="item">
-                  <p class="w3-padding-24 text-white"><i class="fa fa-book w3-jumbo" ></i></p>
-                  <p class="w3-xxlarge text-white">6 Months</p>
-                  <p class="w3-xlarge text-white">$4800</p>
+                  <div class="w3-padding-24 text-white"><i class="fa fa-book w3-jumbo" ></i></div>
+                  <div class="w3-xxlarge text-white">6 Months</div>
+                  <div class="w3-xlarge text-white">$4800</div>
                 </div>
                 <div class="item">
-                  <p class="w3-padding-24 text-white"><i class="fa fa-book w3-jumbo" ></i></p>
-                  <p class="w3-xxlarge text-white">1 Year</p>
-                  <p class="w3-xlarge text-white">$9600</p>
+                  <div class="w3-padding-24 text-white"><i class="fa fa-book w3-jumbo" ></i></div>
+                  <div class="w3-xxlarge text-white">1 Year</div>
+                  <div class="w3-xlarge text-white">$9600</div>
                 </div>
               </main>
-              <div id="rightArrow" class="carousel-right-arrow"><i class="fa fa-arrow-right w3-xxlarge text-coral"></i></div>
+              <div class="carousel-right-arrow"><i id="rightArrow" class="fa fa-arrow-right w3-xxlarge text-coral"></i></div>
             </div>  
-          
-
-          <footer class="">
-            <div  class="w3-xxlarge w3-center">Sponsor a child with us!</div>
-          </footer>
         </div>
       </div>
     </section>
@@ -1002,5 +1003,8 @@
         <i class="fa fa-linkedin w3-hover-opacity"></i>
       </div>
     </footer>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>
