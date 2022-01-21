@@ -1,0 +1,4 @@
+one solid container
+add address, phone, email around the header
+
+email phone    right side address

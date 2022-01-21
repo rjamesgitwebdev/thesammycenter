@@ -13,7 +13,7 @@
   --black-coral: #5f616dff;
   --cadet-blue: #4c9eaaff;
 
-  background-image: url("../assets/newbg.jpg");
+  /* background-image: url("../assets/newbg.jpg"); */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -164,7 +164,6 @@ html {
 
 
 /* Create a Parallax Effect */
-.bgimg-1,
 .bgimg-2,
 .bgimg-3,
 .bgimg-4 {
@@ -174,11 +173,6 @@ html {
   background-size: cover;
 }
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url("../assets/newbg.jpg");
-  min-height: 70%;
-}
 
 /* Second image (Portfolio) */
 .bgimg-2 {
@@ -267,9 +261,6 @@ textarea::placeholder {
   row-gap: 1rem;
 }
 
-.item-3>header{
-  text-align: center;
-}
 
 .item-4 {
   display: flex;
@@ -361,9 +352,12 @@ div.w3-row {
 
 .bio-img {
   max-width: 200px;
-  max-height: 300px;
+  max-height: 400px;
   object-fit: cover;
+  border-radius: 10px;
 }
+
+
 .bio-flex {
   display: flex;
   flex-wrap: wrap;
@@ -377,7 +371,7 @@ div.w3-row {
 .bio-flex-item {
   display: flex;
   flex-direction: column;
-  flex: 400px;
+  flex: 0 0 425px;
   height: auto;
   justify-content: space-around;
   align-items: center;
@@ -387,7 +381,7 @@ div.w3-row {
   display: flex;
   align-items: center;
   justify-content: center;
-  height:300px;
+  height:400px;
 }
 
 p.w3-xlarge {
@@ -395,7 +389,7 @@ p.w3-xlarge {
 }
 
 .aboutimg {
-  max-width: 250px;
+  max-width: 400px;
   height: auto;
   object-fit: scale-down;
 }
@@ -414,7 +408,7 @@ p.w3-tag{
   margin: 0;
   display: grid;
   grid-template-rows: 350px 50px;
-  grid-template-columns: 1fr 2fr 30px 30px 30px 30px 30px 30px 30px 2fr 1fr;
+  grid-template-columns: 4fr 2fr 30px 30px 30px 30px 30px 30px 30px 2fr 4fr;
   align-items: center;
   justify-items: center;
 }
@@ -459,6 +453,7 @@ div.item {
 .carousel-arrow{
   cursor: pointer;
 }
+
 
 div.item:nth-of-type(1) {
   --offset: 1;
@@ -549,5 +544,15 @@ input:nth-of-type(7) {
 }
 input:nth-of-type(7):checked ~ main#carousel {
   --position: 7;
+}
+
+.header-flex{
+display:flex;
+flex-direction:row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin-top: 4rem;
+margin-bottom: 4rem;
 }
 
