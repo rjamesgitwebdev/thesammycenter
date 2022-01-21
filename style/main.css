@@ -135,7 +135,10 @@ html {
 #myNavbar {
   color: white;
   background-color: var(--black-coral);
+  display:flex;
+  align-items: flex-end;
 }
+
 
 /* navbar hover animation  */
 
@@ -548,11 +551,24 @@ input:nth-of-type(7):checked ~ main#carousel {
 
 .header-flex{
 display:flex;
-flex-direction:row;
+flex-direction:column;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 margin-top: 4rem;
 margin-bottom: 4rem;
+}
+
+.subheader-flex{
+  display: flex;
+  width:100%;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+hr{
+  width:90%;
+  height: 10px;
+  background-color: var(--black-coral);
 }
 
