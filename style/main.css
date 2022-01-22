@@ -12,8 +12,11 @@
   --fire-opal: #ef6351ff;
   --black-coral: #5f616dff;
   --cadet-blue: #4c9eaaff;
+  --linen: #FCEADE;
+  --cultured:#F1F2EE;
+  --alabastor:#E2E8DD;
 
-  /* background-image: url("../assets/newbg.jpg"); */
+  background-color: #E2E8DD;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -561,6 +564,8 @@ margin-bottom: 4rem;
 
 .subheader-flex{
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
   width:100%;
   justify-content: space-between;
   align-items: stretch;
@@ -572,3 +577,7 @@ hr{
   background-color: var(--black-coral);
 }
 
+#venmoBtn>a{
+  color: var(--bone);
+  text-decoration: none;
+}
