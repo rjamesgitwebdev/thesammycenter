@@ -395,7 +395,7 @@ p.w3-xlarge {
 }
 
 .aboutimg {
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
   object-fit: scale-down;
 }
@@ -565,10 +565,16 @@ margin-bottom: 4rem;
 .subheader-flex{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   width:100%;
-  justify-content: space-between;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.subheader-flex>div{
+  flex:10rem;
+  text-align: center;
 }
 
 hr{
